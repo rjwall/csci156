@@ -22,7 +22,7 @@ class Article{
   void setcolor(string clothingcolor){ color = clothingcolor; }
   
   void setAll(int, string, string, string);
-  
+
   Article(int, string, string, string);
   
   ~Article();
@@ -46,12 +46,12 @@ void Article::setAll(int size, string type, string brand, string color){
   
 }
 
-void Article::Article(int size, string type, string brand, string color) {
+void Article::Article(int size, string type, string brand, string color){
   this -> size = size;
   this -> type = type;
   this -> brand = brand;
   this -> color = color;
-  
+  cout << "Order placed." << endl;
 }
 Article::~Article() {
   cout << "Article " << this -> type << " destroyed." << endl;
